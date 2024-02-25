@@ -1,0 +1,18 @@
+<tr>
+  <td>{ID}</td>
+  <td>{TITULO}</td>
+  <td>{AUTOR}</td>
+  <td>
+    <form action="/mostraEditaLivro.php" method="post">
+      <input type="hidden" name="index" value="{ID}" />
+      <input type="hidden" name="titulo" value="{TITULO}" />
+      <input type="hidden" name="autor" value="{AUTOR}" />
+      <input type="submit" value="Editar" />
+    </form>
+    <br />
+    <form action="/apagarLivro.php" method="post">
+      <input type="hidden" name="index" value="{ID}" />
+      <input type="submit" value="Apagar" />
+    </form>
+  </td>
+</tr>
